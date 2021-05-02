@@ -1,4 +1,8 @@
-AutoFox | 
+Air Quality Index | React SPA 
 
-Todo: 
-1. Build the login
+# Features
+### Live preview :
+
+The tables shows realtime updated values for air quality index. 
+
+![Welcome Image Sreen](https://github.com/vineetvk01/AQI/blob/main/welcome.png?raw=true)
