@@ -243,6 +243,20 @@ const CityTable = (props) => {
           onChangePage={handleChangePage}
           onChangeRowsPerPage={handleChangeRowsPerPage}
         />
+        <div className={styles.indicator}>
+          <div className={styles.box} style={{ backgroundColor: backgroundColor[50]}}></div>
+          <span>0-50</span>
+          <div className={styles.box} style={{ backgroundColor: backgroundColor[100]}}></div>
+          <span>51-100</span>
+          <div className={styles.box} style={{ backgroundColor: backgroundColor[200]}}></div>
+          <span>101-200</span>
+          <div className={styles.box} style={{ backgroundColor: backgroundColor[300]}}></div>
+          <span>201-300</span>
+          <div className={styles.box} style={{ backgroundColor: backgroundColor[400]}}></div>
+          <span>301-400</span>
+          <div className={styles.box} style={{ backgroundColor: backgroundColor[500]}}></div>
+          <span>401-500</span>
+        </div>
     </div>
     
   )

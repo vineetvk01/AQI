@@ -12,6 +12,10 @@
 }
 
 .homeContainer {
+  .container {
+    padding: 20px 50px;
+  }
+
   .rightButton {
     position: absolute;
     right: 20px;
@@ -19,6 +23,10 @@
 }
 
 .welcomeScreen {
+  text-align: center;
+  img {
+    margin: 0 auto;
+  }
   h5 {
     color: #666;
     font-size: 24px;
@@ -32,5 +40,23 @@
 
   .checkbox {
     background-color: #fff;
+  }
+
+  .indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .box {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #333;
+      margin-left: 10px;
+    }
+
+    span {
+      margin-left: 5px;
+    }
   }
 }

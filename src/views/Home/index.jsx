@@ -9,7 +9,7 @@ import { AppBar, Button, Grid, Toolbar, Typography } from '@material-ui/core';
 
 const HomeView = () => {
   const [pollutionObj, setPollutionObj] = useLocalStorage('pollutionRecord', {});
-  const [selected, setSelected] = useState(['Delhi']);
+  const [selected, setSelected] = useState([]);
 
   useEffect(() => {
     pollutionDataSource.onopen = () => {
@@ -57,6 +57,7 @@ const HomeView = () => {
       pollutionDataSource.onclose = () => {
         console.log('disconnected')
       }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const handleReset = () => {
@@ -73,7 +74,7 @@ const HomeView = () => {
           <Button color="inherit" className={styles.rightButton} onClick={handleReset}>Reset</Button>
         </Toolbar>
       </AppBar>
-      <Grid container spacing={3} >
+      <Grid container spacing={3} className={styles.container}>
         <Grid item xs={4}>
           <CityTable 
             pollutionData={pollutionObj} 
@@ -81,7 +82,7 @@ const HomeView = () => {
             setSelected={setSelected}
           />
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={8}>
           <CityChart 
             pollutionData={pollutionObj} 
             selected={selected}

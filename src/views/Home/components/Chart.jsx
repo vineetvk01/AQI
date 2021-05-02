@@ -72,7 +72,7 @@ const CityChart = (props) => {
   if(selected.length < 1) {
     return (
       <div className={styles.welcomeScreen}>
-        <h5>Select a city to view its historical graph</h5>
+        <h5>Select one or more city to view its historical graph / comparisons</h5>
         <img src={meetingImage} alt="Welcome" width="800" />
       </div>
     )
