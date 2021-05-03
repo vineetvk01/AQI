@@ -75,14 +75,14 @@ const HomeView = () => {
         </Toolbar>
       </AppBar>
       <Grid container spacing={3} className={styles.container}>
-        <Grid item xs={4}>
+        <Grid item xs={12} md={5}>
           <CityTable 
             pollutionData={pollutionObj} 
             selected={selected}
             setSelected={setSelected}
           />
         </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={12} md={7}>
           <CityChart 
             pollutionData={pollutionObj} 
             selected={selected}
