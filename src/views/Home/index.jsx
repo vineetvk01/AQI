@@ -62,6 +62,7 @@ const HomeView = () => {
 
   const handleReset = () => {
     setPollutionObj({});
+    setSelected([]);
   }
 
   return (
