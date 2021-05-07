@@ -1,7 +1,6 @@
 Air Quality Index | React SPA 
 
 # Features
-#### TIME TAKEN: 1-2 Days
 ### Live preview :
 
 - The tables shows realtime updated values for air quality index. 
